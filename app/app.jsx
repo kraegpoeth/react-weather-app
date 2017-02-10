@@ -7,6 +7,10 @@ const Weather = require('./components/Weather.jsx')
 const About = require('./components/About.jsx')
 const Examples = require('./components/Examples.jsx')
 
+
+require('style-loader!css-loader!foundation-sites/dist/css/foundation.min.css');
+$(document).foundation();
+
 ReactDOM.render(
   <Router history={hashHistory}>
     <Route path="/" component={Main}>
