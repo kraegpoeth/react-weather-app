@@ -13634,12 +13634,39 @@ module.exports = {
 var React = __webpack_require__(5);
 
 var About = React.createClass({
-  displayName: 'About',
+  displayName: "About",
   render: function render() {
     return React.createElement(
-      'h3',
+      "div",
       null,
-      'About component'
+      React.createElement(
+        "h1",
+        { className: "text-center" },
+        "Examples component"
+      ),
+      React.createElement(
+        "p",
+        null,
+        "A small project to play around with ",
+        React.createElement(
+          "a",
+          { href: "https://facebook.github.io/react" },
+          "React"
+        ),
+        ", ",
+        React.createElement(
+          "a",
+          { href: "http://openweathermap.org" },
+          "3rd party APIs"
+        ),
+        " and ",
+        React.createElement(
+          "a",
+          { href: "http://heroku.com" },
+          "Heroku"
+        ),
+        " deployment."
+      )
     );
   }
 });
@@ -13876,7 +13903,7 @@ var Weather = React.createClass({
       if (isLoading) {
         return React.createElement(
           'h3',
-          null,
+          { className: 'text-center' },
           'Fetching data...'
         );
       } else if (temp && location) {
@@ -13888,9 +13915,9 @@ var Weather = React.createClass({
       'div',
       null,
       React.createElement(
-        'h3',
-        null,
-        'weather component'
+        'h1',
+        { className: 'text-center' },
+        'Get Temperature'
       ),
       React.createElement(WeatherForm, { onSearch: this.handleSearch }),
       renderMessage()
@@ -13928,7 +13955,7 @@ var WeatherForm = React.createClass({
       React.createElement('input', { type: 'text', ref: 'location', placeholder: 'Enter City Name' }),
       React.createElement(
         'button',
-        null,
+        { className: 'expanded hollow button' },
         'Get Weather'
       )
     );
