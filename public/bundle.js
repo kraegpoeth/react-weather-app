@@ -12730,7 +12730,7 @@ var Examples = __webpack_require__(141);
 __webpack_require__(274);
 $(document).foundation();
 
-__webpack_require__(279);
+__webpack_require__(283);
 
 ReactDOM.render(React.createElement(
   Router,
@@ -28922,7 +28922,11 @@ var ErrorModal = React.createClass({
 module.exports = ErrorModal;
 
 /***/ }),
-/* 278 */
+/* 278 */,
+/* 279 */,
+/* 280 */,
+/* 281 */,
+/* 282 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(148)();
@@ -28930,19 +28934,19 @@ exports = module.exports = __webpack_require__(148)();
 
 
 // module
-exports.push([module.i, ".page-title {\n  margin-top: 2.5rem;\n  margin-bottom: 1em;\n}\ninput[type=search] {\n  box-shadow: none;\n}\n", ""]);
+exports.push([module.i, ".page-title {\n  margin-top: 2.5rem;\n  margin-bottom: 1em; }\n\ninput[type=search] {\n  box-shadow: none; }\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 279 */
+/* 283 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(278);
+var content = __webpack_require__(282);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(273)(content, {});
@@ -28951,8 +28955,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!./../../node_modules/css-loader/index.js!./app.css", function() {
-			var newContent = require("!!./../../node_modules/css-loader/index.js!./app.css");
+		module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/lib/loader.js!./app.scss", function() {
+			var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/lib/loader.js!./app.scss");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
